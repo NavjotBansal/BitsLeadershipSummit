@@ -55,7 +55,7 @@ for(var i=0; i<links.length; i++)
                     (function()
                     {
                         var hop_top_position = gap*i;
-                        setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
+                        setTimeout(function(){  window.scrollTo(0,hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
                     })();
                 }
             }
@@ -80,10 +80,51 @@ var getScrollTopElement =  function (e)
 
 var getScrollTopDocument = function()
 {
-    return document.documentElement.scrollTop + document.body.scrollTop;
+    return document.documentElement.scrollTop + document.body.scrollTop+20;
 };
 })();
 document.querySelector("#seemore").onclick=function()
 {
     document.querySelector("body").style.overflowY="auto";
 }
+
+// distance from top
+$(window).on('scroll', function () {
+    var scrollTop     = $(window).scrollTop(),
+        elementOffseta = $('.about').offset().top,
+        // elementOffsetc = $('.sponsors').offset().top,
+        elementOffsetb = $('.speakers').offset().top,
+        elementOffsetc = $('.contact').offset().top,        
+        distancea      = (elementOffseta - scrollTop-10);
+        distanceb      = (elementOffsetb - scrollTop-10);
+        distancec      = (elementOffsetc - scrollTop-10);
+        // distanced      = (elementOffsetd - scrollTop-10);
+        if(distancea>0)
+        {
+            $(".nav ul li:nth-child(2) a ").css("color","#b6b8ba");
+
+        }
+        else if(distancea<=0 && distanceb>5 && distancec>0 )
+        {
+            $(".nav ul li:nth-child(2) a ").css("color","#2791cf");
+            $(".nav ul li:nth-child(3) a ").css("color","#b6b8ba");
+            document.querySelector("#p1").className="normal";
+        }
+        else if(distanceb<=4 && distancec>5)
+        {
+            $(".nav ul li:nth-child(3) a").css("color","#2791cf");
+            $(".nav ul li:nth-child(2) a").css("color","#b6b8ba");
+            $(".nav ul li:nth-child(4) a").css("color","#b6b8ba");
+            document.querySelector("#p1").className="slide";
+            document.querySelector("#p2").className="normal";
+        }
+        else if(distancec<=4)
+        {
+            $(".nav ul li:nth-child(4) a").css("color","#2791cf");
+            $(".nav ul li:nth-child(3) a").css("color","#b6b8ba");
+            $(".nav ul li:nth-child(5) a").css("color","#b6b8ba");
+            document.querySelector("#p1").className="slide";
+            document.querySelector("#p2").className="slide";
+            document.querySelector("#p3").className="normal";
+        }
+});

@@ -1,0 +1,67 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LeaderSummit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/team.css">
+    <script src="static/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="meet"><p>Meet the Team</p></div>
+<div class="teamwrapper">
+    <!-- <div class="member">
+        <img src="static/img/speaker/ss.jpg">
+        <div class="surnd">
+            <img src="static/img/team/buffer.png">
+        </div>
+        <div id="info">
+        <p id="name">name</p>
+        <p id="team">team</p>
+        </div>
+    </div> -->
+    <p id="soon">Meet us Soon</p>
+</div>
+<div id="home">
+    <a href="index.html">
+        <p>HOME</p>
+    </a>
+</div>
+<div class="flexbox">
+    <div class="flexback"></div>
+    <div class="flexinfo">
+        <div class="fleximg"></div>
+        <div class="content">
+            <p>
+                We have a dedicated team of students from across The Wharton School and University of Pennsylvania working tirelessly to deliver a meaningful and memorable experience to all conference delegates and speakers
+                We have a dedicated team of students from across The Wharton School and University of Pennsylvania working tirelessly to deliver a meaningful and memorable experience to all conference delegates and speakers
+                We have a dedicated team of students from across The Wharton School and University of Pennsylvania working tirelessly to deliver a meaningful and memorable experience to all conference delegates and speakers
+                We have a dedicated team of students from across The Wharton School and University of Pennsylvania working tirelessly to deliver a meaningful and memorable experience to all conference delegates and speakers
+                We have a dedicated team of students from across The Wharton School and University of Pennsylvania working tirelessly to deliver a meaningful and memorable experience to all conference delegates and speakers
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    // teamwrapper=document.querySelector(".teamwrapper");
+    // stringteam="";
+    // var team =[{name:"navjot basnal",team:"tech",img:"dp"},
+    // {name:"himanshu",team:"sportsrep",img:"dp"},{name:"himanshu",team:"sportsrep",img:"dp"},{name:"himanshu",team:"sportsrep",img:"dp"},{name:"himanshu",team:"sportsrep",img:"dp"}];
+    // for (let x of team)
+    // {
+    // stringteam+='<div class="member">\
+    //     <img src="static/img/'+x.img+'.png">\
+    //     <p>'+x.name+'</p>\
+    //     <p>'+x.team+'</p>\
+    // </div>'
+    // }
+    // teamwrapper.innerHTML = stringteam;
+    $(".member").click(function(){
+        $(".flexbox").fadeIn("slow");
+    });
+    $(".flexback").click(function()
+    {
+        $(".flexbox").fadeOut("slow");
+    });
+</script>
+</body>
+</html>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/animate.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="static/css/flex.css">
     <script src="static/js/wow.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="static/img/blp.png"/>
@@ -33,9 +32,9 @@
         <li id="logo"><img src="static/img/blp.png"></li>
         <li><a href="#aboutcont">About</a></li>
         <li><a href="#spkr">Speakers</a></li>
-        <!-- <li><a href="#spnsr">Sponsors</a></li> -->
+        <li><a href="#spnsr">Sponsors</a></li>
         <li><a href="#cnct">Contact</a></li>
-        <li><a href="team.html">Team</a></li>
+        <li><a href="#team">Team</a></li>
     </ul>
 </div>
 <div class="about" id="aboutcont">
@@ -46,27 +45,27 @@
 <div class="speakers" id="spkr">
         <div class="spktitle">Past Speakers</div>
         <div class="spkcont">
-            <div class="flex-item"><div id="image"><img src="static/img/speaker/amish.png"></div><div id="name"><p>Amish Tripathi</p></div></div>
-            <div class="flex-item"><div id="image"><img src="static/img/speaker/jairam.png"></div><div id="name"><p>Jairam Ramesh</p></div></div>
-            <div class="flex-item"><div id="image"><img src="static/img/speaker/rajamouli.png"></div><div id="name"><p>S.S Rajamouli</p></div></div>
-            <div class="flex-item"><div id="image"><img src="static/img/speaker/salman.png"></div><div id="name"><p>Salman Khurshid</p></div></div>
-            <div class="flex-item"><div id="image"><img src="static/img/speaker/Kiran.png"></div><div id="name"><p>Kiran Bedi</p></div></div>
-            <div class="flex-item"><div id="image"><img src="static/img/speaker/akbar.png"></div><div id="name"><p>M.J.Akbar</p></div></div>
+            <div class="flex-item"><div id="image"><img src="static/img/speaker/at.jpg"></div><div id="name"><p>Amish Tripathi</p></div></div>
+            <div class="flex-item"><div id="image"><img src="static/img/speaker/jr.jpg"></div><div id="name"><p>Jairam Ramesh</p></div></div>
+            <div class="flex-item"><div id="image"><img src="static/img/speaker/ss.jpg"></div><div id="name"><p>S.S Rajamouli</p></div></div>
+            <div class="flex-item"><div id="image"><img src="static/img/speaker/sk.jpg"></div><div id="name"><p>Salman Khurshid</p></div></div>
+            <div class="flex-item"><div id="image"><img src="static/img/speaker/kb.jpg"></div><div id="name"><p>Kiran Bedi</p></div></div>
+            <div class="flex-item"><div id="image"><img src="static/img/speaker/mj.jpg"></div><div id="name"><p>M.J.Akbar</p></div></div>
         </div>
-        <p id="soon">More Speaker Releasing on 28th Feb and 10th March</p>
+        <p id="soon">More Speaker Releasing on 28th Feb and 3rd March</p>
 </div>
-<!-- <div class="sponsors" id="spnsr">
+<div class="sponsors" id="spnsr">
     <div class="spntitle">Sponsors</div>
     <div class="spncont">
+            <!-- <div class="flex-item"><div id="image"></div><div id="name"></div></div>
             <div class="flex-item"><div id="image"></div><div id="name"></div></div>
             <div class="flex-item"><div id="image"></div><div id="name"></div></div>
             <div class="flex-item"><div id="image"></div><div id="name"></div></div>
             <div class="flex-item"><div id="image"></div><div id="name"></div></div>
-            <div class="flex-item"><div id="image"></div><div id="name"></div></div>
-            <div class="flex-item"><div id="image"></div><div id="name"></div></div> 
+            <div class="flex-item"><div id="image"></div><div id="name"></div></div> -->
         <p id="soon">Coming Soon</p>
     </div>
-</div> -->
+</div>
 <div class="contact" id="cnct">
     <div id="promo">
         <div id="social">
@@ -109,12 +108,12 @@
                     <p>91-9929951738</p>
                     <p>ruchir@thebls.in</p>
                 </div>
-                <!-- <div id="item">
+                <div id="item">
                         <p>akshat mechu</p>
                         <p>co-chair,bls 2018</p>
                         <p>91-9602958267</p>
                         <p>akshat@thebls.in</p>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -124,19 +123,7 @@
     <p id="p2">WHO</p>
     <p id="p3">WHEN</p>
     <p id="p4">WHERE</p>
-</div>
-
-<div class="flexcontainer">
-        <div class="background"></div>
-        <div class="flexcontent">
-            <div id="close"><img src="static/img/speaker/back.svg"></div>
-            <div class="flexhead">Amish Tripathi</div>
-            <div class="flexinfo">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </div>
-        </div>
-</div>
-
+</div>    
 <script src="static/js/main.js"></script>
-<script src="static/js/flex.js"></script>
-</body></html>
+
+
